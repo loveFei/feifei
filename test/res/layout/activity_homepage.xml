@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/editText_search"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/search2"
+            android:drawableRight="@drawable/search1"
+            android:hint="     搜 索 商 品 / 店铺 "
+            android:textSize="16sp" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/image_button_erweima"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/erweima" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/linearLayout1" >
+    </android.support.v4.view.ViewPager>
+
+     <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/viewpager"
+        android:orientation="horizontal" >
+        
+        <ImageButton 
+            android:id="@+id/imagebutton_homepage_look"
+        	android:layout_width="70dp"
+        	android:layout_height="80dp"
+        	android:layout_marginLeft="10dp"
+        	android:src="@drawable/home_look"/>
+        <ImageButton 
+            android:id="@+id/imagebutton_homepage_wuliu"
+        	android:layout_width="70dp"
+        	android:layout_height="80dp"
+        	android:layout_marginLeft="10dp"
+        	android:src="@drawable/home_woliu"/>
+        
+        <ImageButton 
+            android:id="@+id/imagebutton_homepage_caipiao"
+        	android:layout_width="70dp"
+        	android:layout_height="80dp"
+        	android:layout_marginLeft="10dp"
+        	android:src="@drawable/home_addmoney"/>
+        
+        <ImageButton 
+            android:id="@+id/imagebutton_homepage_caipiao"
+        	android:layout_width="70dp"
+        	android:layout_height="80dp"
+        	android:layout_marginLeft="10dp"
+        	android:src="@drawable/home_caipiao"/>
+        
+        
+        
+     </LinearLayout>
+    
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linearLayout2"
+        android:background="#F5F5EA"
+        android:gravity="left"
+        android:paddingTop="5dp"
+        android:text="今日特价"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

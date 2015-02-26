@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+    
+    
+    <RelativeLayout 
+        android:id="@+id/linear"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp" >
+        
+        <TextView 
+	          android:id="@+id/textview1"
+	          android:layout_width="wrap_content"
+	          android:layout_height="30dp"
+	          android:textSize="20sp"
+	          android:textColor="#000000"
+	          android:gravity="center_horizontal"
+	          android:paddingTop="5dp"
+	          android:layout_centerHorizontal="true"
+	          android:text="购物车"/>
+
+         <TextView
+             android:id="@+id/textview_bianji"
+             android:layout_width="wrap_content"
+             android:layout_height="30dp"
+             android:layout_alignParentTop="true"
+             android:layout_alignParentRight="true"
+             android:paddingTop="5dp"
+             android:text="删除"
+             android:textColor="#000000"
+             android:textSize="20sp" />
+        
+    </RelativeLayout>
+    
+     <net.yasite.view.XListView 
+        android:id="@+id/list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="30dp"
+        android:layout_above="@+id/linearLayout1"
+        android:background="#ffffff"
+        />
+
+     <LinearLayout
+         android:id="@+id/linearLayout1"
+         android:layout_width="fill_parent"
+    	 android:layout_height="50dp"
+    	 android:layout_alignParentBottom="true"
+    	 android:layout_marginBottom="0dp"
+    	 android:background="#000000" >
+         
+         <CheckBox
+	         android:id="@+id/checkBox_all"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:textColor="#ffffff"
+	         android:layout_weight="1"
+	         android:text=" 全选" />
+         
+         <TextView
+	         android:id="@+id/textview_sumprice"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:textSize="20sp"
+	         android:layout_weight="1"
+	         android:textColor="#ffffff"
+	         android:text="合计:" />
+         
+         <Button
+	         android:id="@+id/button_pay"
+	         style="?android:attr/buttonStyleSmall"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:textSize="20sp"
+	         android:layout_weight="1"
+	         android:background="#ff0000"
+	         android:textColor="#ffffff"
+	         android:text="去结算" />
+         
+     </LinearLayout>
+
+</RelativeLayout>

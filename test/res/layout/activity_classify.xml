@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/editText_search"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/search2"
+            android:drawableRight="@drawable/search1"
+            android:hint="     搜 索 商 品 / 店铺 "
+            android:textSize="16sp" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/image_button_erweima"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/erweima" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/fragment_classify_parent"
+        android:name="net.yasite.fragment.Parent_Classify"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"/>
+    
+
+    <FrameLayout
+        android:id="@+id/linearlayout_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_toRightOf="@+id/fragment_classify_parent"
+        android:orientation="vertical" >
+        <!--  
+        <fragment
+        	android:id="@+id/fragment_classify_son"
+        	android:name="net.yasite.fragment.Son_Classify"
+        	android:layout_width="wrap_content"
+        	android:layout_height="match_parent" />
+        -->
+    </FrameLayout>
+    
+</RelativeLayout>

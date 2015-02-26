@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <AutoCompleteTextView
+            android:id="@+id/editText_search"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:drawableLeft="@drawable/search2"
+            android:drawableRight="@drawable/search1"
+            android:hint="     搜 索 商 品 / 店铺 "
+            android:textSize="16sp" >
+        </AutoCompleteTextView>
+		
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="0dp"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:text="搜索" />
+    </LinearLayout>
+
+</RelativeLayout>
